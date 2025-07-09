@@ -1,0 +1,13 @@
+ENVI
+description = {Sentinel-1 IW Level-1 SLC Product - Unit: real}
+samples = 6778
+lines = 1964
+bands = 1
+header offset = 0
+file type = ENVI Standard
+data type = 2
+interleave = bsq
+byte order = 1
+band names = { i_IW2_VV_mst_12Jun2025 }
+data gain values = {1.0}
+data offset values = {0.0}
