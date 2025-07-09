@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<Dimap_Document name="S1A_back_VV_1_deb.dim_subset.dim">
+<Dimap_Document name="S1A_back_VV_1_deb.dim_terrain_correction_subset.dim">
     <Metadata_Id>
         <METADATA_FORMAT version="2.13.0">DIMAP</METADATA_FORMAT>
         <METADATA_PROFILE>BEAM-DATAMODEL-V1</METADATA_PROFILE>
     </Metadata_Id>
     <Dataset_Id>
         <DATASET_SERIES>BEAM-PRODUCT</DATASET_SERIES>
-        <DATASET_NAME>S1A_back_VV_1_deb.dim_subset</DATASET_NAME>
+        <DATASET_NAME>S1A_back_VV_1_deb.dim_terrain_correction_subset</DATASET_NAME>
     </Dataset_Id>
     <Dataset_Use>
         <DATASET_COMMENTS>Sentinel-1 IW Level-1 SLC Product</DATASET_COMMENTS>
@@ -14,143 +14,51 @@
     <Production>
         <DATASET_PRODUCER_NAME />
         <PRODUCT_TYPE>Derived from (SLC)</PRODUCT_TYPE>
-        <PRODUCT_SCENE_RASTER_START_TIME>31-MAY-2025 02:37:54.098921</PRODUCT_SCENE_RASTER_START_TIME>
-        <PRODUCT_SCENE_RASTER_STOP_TIME>31-MAY-2025 02:37:54.288064</PRODUCT_SCENE_RASTER_STOP_TIME>
-        <QUICKLOOK_BAND_NAME>Intensity_IW2_VV_slv1_12Jun2025</QUICKLOOK_BAND_NAME>
+        <PRODUCT_SCENE_RASTER_START_TIME>31-MAY-2025 02:37:54.114226</PRODUCT_SCENE_RASTER_START_TIME>
+        <PRODUCT_SCENE_RASTER_STOP_TIME>31-MAY-2025 02:37:54.256051</PRODUCT_SCENE_RASTER_STOP_TIME>
     </Production>
     <Coordinate_Reference_System>
-        <Horizontal_CS>
-            <HORIZONTAL_CS_TYPE>GEOGRAPHIC</HORIZONTAL_CS_TYPE>
-            <Geographic_CS>
-                <Horizontal_Datum>
-                    <HORIZONTAL_DATUM_NAME>WGS-84</HORIZONTAL_DATUM_NAME>
-                    <Ellipsoid>
-                        <ELLIPSOID_NAME>WGS-84</ELLIPSOID_NAME>
-                        <Ellipsoid_Parameters>
-                            <ELLIPSOID_MAJ_AXIS unit="M">6378137.0</ELLIPSOID_MAJ_AXIS>
-                            <ELLIPSOID_MIN_AXIS unit="M">6356752.3</ELLIPSOID_MIN_AXIS>
-                        </Ellipsoid_Parameters>
-                    </Ellipsoid>
-                </Horizontal_Datum>
-            </Geographic_CS>
-        </Horizontal_CS>
+        <WKT>
+             GEOGCS["WGS84(DD)", 
+               DATUM["WGS84", 
+                 SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+               PRIMEM["Greenwich", 0.0], 
+               UNIT["degree", 0.017453292519943295], 
+               AXIS["Geodetic longitude", EAST], 
+               AXIS["Geodetic latitude", NORTH], 
+               AUTHORITY["EPSG","4326"]]
+        </WKT>
     </Coordinate_Reference_System>
     <Geoposition>
-        <Geoposition_Points>
-            <TIE_POINT_GRID_NAME_LAT>latitude</TIE_POINT_GRID_NAME_LAT>
-            <TIE_POINT_GRID_NAME_LON>longitude</TIE_POINT_GRID_NAME_LON>
-        </Geoposition_Points>
+        <IMAGE_TO_MODEL_TRANSFORM>1.2527509693605832E-4,0.0,0.0,-1.2527509693605832E-4,50.99162839085282,34.8894477821676</IMAGE_TO_MODEL_TRANSFORM>
     </Geoposition>
     <Raster_Dimensions>
-        <NCOLS>372</NCOLS>
-        <NROWS>93</NROWS>
-        <NBANDS>6</NBANDS>
+        <NCOLS>106</NCOLS>
+        <NROWS>80</NROWS>
+        <NBANDS>2</NBANDS>
     </Raster_Dimensions>
     <Data_Access>
         <DATA_FILE_FORMAT>ENVI</DATA_FILE_FORMAT>
         <DATA_FILE_FORMAT_DESC>ENVI File Format</DATA_FILE_FORMAT_DESC>
         <DATA_FILE_ORGANISATION>BAND_SEPARATE</DATA_FILE_ORGANISATION>
         <Data_File>
-            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/i_IW2_VV_mst_31May2025.hdr" />
+            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_terrain_correction_subset.data/Intensity_IW2_VV_mst_31May2025.hdr" />
             <BAND_INDEX>0</BAND_INDEX>
         </Data_File>
         <Data_File>
-            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/q_IW2_VV_mst_31May2025.hdr" />
+            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_terrain_correction_subset.data/Intensity_IW2_VV_slv1_12Jun2025.hdr" />
             <BAND_INDEX>1</BAND_INDEX>
         </Data_File>
-        <Data_File>
-            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/i_IW2_VV_slv1_12Jun2025.hdr" />
-            <BAND_INDEX>3</BAND_INDEX>
-        </Data_File>
-        <Data_File>
-            <DATA_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/q_IW2_VV_slv1_12Jun2025.hdr" />
-            <BAND_INDEX>4</BAND_INDEX>
-        </Data_File>
-        <Tie_Point_Grid_File>
-            <TIE_POINT_GRID_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/tie_point_grids/latitude.hdr" />
-            <TIE_POINT_GRID_INDEX>0</TIE_POINT_GRID_INDEX>
-        </Tie_Point_Grid_File>
-        <Tie_Point_Grid_File>
-            <TIE_POINT_GRID_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/tie_point_grids/longitude.hdr" />
-            <TIE_POINT_GRID_INDEX>1</TIE_POINT_GRID_INDEX>
-        </Tie_Point_Grid_File>
-        <Tie_Point_Grid_File>
-            <TIE_POINT_GRID_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/tie_point_grids/slant_range_time.hdr" />
-            <TIE_POINT_GRID_INDEX>2</TIE_POINT_GRID_INDEX>
-        </Tie_Point_Grid_File>
-        <Tie_Point_Grid_File>
-            <TIE_POINT_GRID_FILE_PATH href="S1A_back_VV_1_deb.dim_subset.data/tie_point_grids/incident_angle.hdr" />
-            <TIE_POINT_GRID_INDEX>3</TIE_POINT_GRID_INDEX>
-        </Tie_Point_Grid_File>
     </Data_Access>
-    <Tie_Point_Grids>
-        <NUM_TIE_POINT_GRIDS>4</NUM_TIE_POINT_GRIDS>
-        <Tie_Point_Grid_Info>
-            <TIE_POINT_GRID_INDEX>0</TIE_POINT_GRID_INDEX>
-            <TIE_POINT_DESCRIPTION />
-            <PHYSICAL_UNIT>deg</PHYSICAL_UNIT>
-            <TIE_POINT_GRID_NAME>latitude</TIE_POINT_GRID_NAME>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <NCOLS>3</NCOLS>
-            <NROWS>3</NROWS>
-            <OFFSET_X>-954.0</OFFSET_X>
-            <OFFSET_Y>-1862.0</OFFSET_Y>
-            <STEP_X>1272.0</STEP_X>
-            <STEP_Y>2448.0</STEP_Y>
-            <CYCLIC discontinuity="0">false</CYCLIC>
-        </Tie_Point_Grid_Info>
-        <Tie_Point_Grid_Info>
-            <TIE_POINT_GRID_INDEX>1</TIE_POINT_GRID_INDEX>
-            <TIE_POINT_DESCRIPTION />
-            <PHYSICAL_UNIT>deg</PHYSICAL_UNIT>
-            <TIE_POINT_GRID_NAME>longitude</TIE_POINT_GRID_NAME>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <NCOLS>3</NCOLS>
-            <NROWS>3</NROWS>
-            <OFFSET_X>-954.0</OFFSET_X>
-            <OFFSET_Y>-1862.0</OFFSET_Y>
-            <STEP_X>1272.0</STEP_X>
-            <STEP_Y>2448.0</STEP_Y>
-            <CYCLIC discontinuity="0">false</CYCLIC>
-        </Tie_Point_Grid_Info>
-        <Tie_Point_Grid_Info>
-            <TIE_POINT_GRID_INDEX>2</TIE_POINT_GRID_INDEX>
-            <TIE_POINT_DESCRIPTION />
-            <PHYSICAL_UNIT>ns</PHYSICAL_UNIT>
-            <TIE_POINT_GRID_NAME>slant_range_time</TIE_POINT_GRID_NAME>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <NCOLS>3</NCOLS>
-            <NROWS>3</NROWS>
-            <OFFSET_X>-954.0</OFFSET_X>
-            <OFFSET_Y>-1862.0</OFFSET_Y>
-            <STEP_X>1272.0</STEP_X>
-            <STEP_Y>2448.0</STEP_Y>
-            <CYCLIC discontinuity="0">false</CYCLIC>
-        </Tie_Point_Grid_Info>
-        <Tie_Point_Grid_Info>
-            <TIE_POINT_GRID_INDEX>3</TIE_POINT_GRID_INDEX>
-            <TIE_POINT_DESCRIPTION />
-            <PHYSICAL_UNIT>deg</PHYSICAL_UNIT>
-            <TIE_POINT_GRID_NAME>incident_angle</TIE_POINT_GRID_NAME>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <NCOLS>3</NCOLS>
-            <NROWS>3</NROWS>
-            <OFFSET_X>-954.0</OFFSET_X>
-            <OFFSET_Y>-1862.0</OFFSET_Y>
-            <STEP_X>1272.0</STEP_X>
-            <STEP_Y>2448.0</STEP_Y>
-            <CYCLIC discontinuity="0">false</CYCLIC>
-        </Tie_Point_Grid_Info>
-    </Tie_Point_Grids>
     <Image_Interpretation>
         <Spectral_Band_Info>
             <BAND_INDEX>0</BAND_INDEX>
             <BAND_DESCRIPTION />
-            <BAND_NAME>i_IW2_VV_mst_31May2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
-            <DATA_TYPE>int16</DATA_TYPE>
-            <PHYSICAL_UNIT>real</PHYSICAL_UNIT>
+            <BAND_NAME>Intensity_IW2_VV_mst_31May2025</BAND_NAME>
+            <BAND_RASTER_WIDTH>106</BAND_RASTER_WIDTH>
+            <BAND_RASTER_HEIGHT>80</BAND_RASTER_HEIGHT>
+            <DATA_TYPE>float32</DATA_TYPE>
+            <PHYSICAL_UNIT>intensity</PHYSICAL_UNIT>
             <SOLAR_FLUX>0.0</SOLAR_FLUX>
             <BAND_WAVELEN>0.0</BAND_WAVELEN>
             <BAND_ANGULAR_VALUE>-999.0</BAND_ANGULAR_VALUE>
@@ -160,87 +68,14 @@
             <LOG10_SCALED>false</LOG10_SCALED>
             <NO_DATA_VALUE_USED>true</NO_DATA_VALUE_USED>
             <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
+            <IMAGE_TO_MODEL_TRANSFORM>1.2527509693605832E-4,0.0,0.0,-1.2527509693605832E-4,50.99162839085282,34.8894477821676</IMAGE_TO_MODEL_TRANSFORM>
         </Spectral_Band_Info>
         <Spectral_Band_Info>
             <BAND_INDEX>1</BAND_INDEX>
             <BAND_DESCRIPTION />
-            <BAND_NAME>q_IW2_VV_mst_31May2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
-            <DATA_TYPE>int16</DATA_TYPE>
-            <PHYSICAL_UNIT>imaginary</PHYSICAL_UNIT>
-            <SOLAR_FLUX>0.0</SOLAR_FLUX>
-            <BAND_WAVELEN>0.0</BAND_WAVELEN>
-            <BAND_ANGULAR_VALUE>-999.0</BAND_ANGULAR_VALUE>
-            <BANDWIDTH>0.0</BANDWIDTH>
-            <SCALING_FACTOR>1.0</SCALING_FACTOR>
-            <SCALING_OFFSET>0.0</SCALING_OFFSET>
-            <LOG10_SCALED>false</LOG10_SCALED>
-            <NO_DATA_VALUE_USED>true</NO_DATA_VALUE_USED>
-            <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
-        </Spectral_Band_Info>
-        <Spectral_Band_Info>
-            <BAND_INDEX>2</BAND_INDEX>
-            <BAND_DESCRIPTION>Intensity from complex data</BAND_DESCRIPTION>
-            <BAND_NAME>Intensity_IW2_VV_mst_31May2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <PHYSICAL_UNIT>intensity</PHYSICAL_UNIT>
-            <SOLAR_FLUX>0.0</SOLAR_FLUX>
-            <BAND_WAVELEN>0.0</BAND_WAVELEN>
-            <BAND_ANGULAR_VALUE>-999.0</BAND_ANGULAR_VALUE>
-            <BANDWIDTH>0.0</BANDWIDTH>
-            <SCALING_FACTOR>1.0</SCALING_FACTOR>
-            <SCALING_OFFSET>0.0</SCALING_OFFSET>
-            <LOG10_SCALED>false</LOG10_SCALED>
-            <NO_DATA_VALUE_USED>true</NO_DATA_VALUE_USED>
-            <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
-            <VIRTUAL_BAND>true</VIRTUAL_BAND>
-            <EXPRESSION>i_IW2_VV_mst_31May2025 == 0.0 ? 0.0 : i_IW2_VV_mst_31May2025 * i_IW2_VV_mst_31May2025 + q_IW2_VV_mst_31May2025 * q_IW2_VV_mst_31May2025</EXPRESSION>
-        </Spectral_Band_Info>
-        <Spectral_Band_Info>
-            <BAND_INDEX>3</BAND_INDEX>
-            <BAND_DESCRIPTION />
-            <BAND_NAME>i_IW2_VV_slv1_12Jun2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <PHYSICAL_UNIT>real</PHYSICAL_UNIT>
-            <SOLAR_FLUX>0.0</SOLAR_FLUX>
-            <BAND_WAVELEN>0.0</BAND_WAVELEN>
-            <BAND_ANGULAR_VALUE>-999.0</BAND_ANGULAR_VALUE>
-            <BANDWIDTH>0.0</BANDWIDTH>
-            <SCALING_FACTOR>1.0</SCALING_FACTOR>
-            <SCALING_OFFSET>0.0</SCALING_OFFSET>
-            <LOG10_SCALED>false</LOG10_SCALED>
-            <NO_DATA_VALUE_USED>false</NO_DATA_VALUE_USED>
-            <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
-        </Spectral_Band_Info>
-        <Spectral_Band_Info>
-            <BAND_INDEX>4</BAND_INDEX>
-            <BAND_DESCRIPTION />
-            <BAND_NAME>q_IW2_VV_slv1_12Jun2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
-            <DATA_TYPE>float32</DATA_TYPE>
-            <PHYSICAL_UNIT>imaginary</PHYSICAL_UNIT>
-            <SOLAR_FLUX>0.0</SOLAR_FLUX>
-            <BAND_WAVELEN>0.0</BAND_WAVELEN>
-            <BAND_ANGULAR_VALUE>-999.0</BAND_ANGULAR_VALUE>
-            <BANDWIDTH>0.0</BANDWIDTH>
-            <SCALING_FACTOR>1.0</SCALING_FACTOR>
-            <SCALING_OFFSET>0.0</SCALING_OFFSET>
-            <LOG10_SCALED>false</LOG10_SCALED>
-            <NO_DATA_VALUE_USED>false</NO_DATA_VALUE_USED>
-            <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
-        </Spectral_Band_Info>
-        <Spectral_Band_Info>
-            <BAND_INDEX>5</BAND_INDEX>
-            <BAND_DESCRIPTION>Intensity from complex data</BAND_DESCRIPTION>
             <BAND_NAME>Intensity_IW2_VV_slv1_12Jun2025</BAND_NAME>
-            <BAND_RASTER_WIDTH>372</BAND_RASTER_WIDTH>
-            <BAND_RASTER_HEIGHT>93</BAND_RASTER_HEIGHT>
+            <BAND_RASTER_WIDTH>106</BAND_RASTER_WIDTH>
+            <BAND_RASTER_HEIGHT>80</BAND_RASTER_HEIGHT>
             <DATA_TYPE>float32</DATA_TYPE>
             <PHYSICAL_UNIT>intensity</PHYSICAL_UNIT>
             <SOLAR_FLUX>0.0</SOLAR_FLUX>
@@ -252,8 +87,7 @@
             <LOG10_SCALED>false</LOG10_SCALED>
             <NO_DATA_VALUE_USED>true</NO_DATA_VALUE_USED>
             <NO_DATA_VALUE>0.0</NO_DATA_VALUE>
-            <VIRTUAL_BAND>true</VIRTUAL_BAND>
-            <EXPRESSION>i_IW2_VV_slv1_12Jun2025 == 0.0 ? 0.0 : i_IW2_VV_slv1_12Jun2025 * i_IW2_VV_slv1_12Jun2025 + q_IW2_VV_slv1_12Jun2025 * q_IW2_VV_slv1_12Jun2025</EXPRESSION>
+            <IMAGE_TO_MODEL_TRANSFORM>1.2527509693605832E-4,0.0,0.0,-1.2527509693605832E-4,50.99162839085282,34.8894477821676</IMAGE_TO_MODEL_TRANSFORM>
         </Spectral_Band_Info>
     </Image_Interpretation>
     <Dataset_Sources>
@@ -278,16 +112,16 @@
                 <MDATTR name="incidence_far" desc="" unit="deg" type="float64" mode="rw">41.96405359530217</MDATTR>
                 <MDATTR name="slice_num" desc="Slice number" unit="" type="int32" mode="rw">8</MDATTR>
                 <MDATTR name="data_take_id" desc="Data take identifier" unit="" type="int32" mode="rw">483477</MDATTR>
-                <MDATTR name="first_line_time" desc="First zero doppler azimuth time" unit="utc" type="utc" mode="rw">31-MAY-2025 02:37:54.098921</MDATTR>
-                <MDATTR name="last_line_time" desc="Last zero doppler azimuth time" unit="utc" type="utc" mode="rw">31-MAY-2025 02:37:54.288064</MDATTR>
-                <MDATTR name="first_near_lat" desc="" unit="deg" type="float64" mode="rw">34.889140904204865</MDATTR>
-                <MDATTR name="first_near_long" desc="" unit="deg" type="float64" mode="rw">51.00594203614773</MDATTR>
-                <MDATTR name="first_far_lat" desc="" unit="deg" type="float64" mode="rw">34.89128420121225</MDATTR>
-                <MDATTR name="first_far_long" desc="" unit="deg" type="float64" mode="rw">50.99120816175185</MDATTR>
-                <MDATTR name="last_near_lat" desc="" unit="deg" type="float64" mode="rw">34.877759864667055</MDATTR>
-                <MDATTR name="last_near_long" desc="" unit="deg" type="float64" mode="rw">51.00348891494255</MDATTR>
-                <MDATTR name="last_far_lat" desc="" unit="deg" type="float64" mode="rw">34.879900066243806</MDATTR>
-                <MDATTR name="last_far_long" desc="" unit="deg" type="float64" mode="rw">50.98877925319462</MDATTR>
+                <MDATTR name="first_line_time" desc="First zero doppler azimuth time" unit="utc" type="utc" mode="rw">31-MAY-2025 02:37:54.114226</MDATTR>
+                <MDATTR name="last_line_time" desc="Last zero doppler azimuth time" unit="utc" type="utc" mode="rw">31-MAY-2025 02:37:54.256051</MDATTR>
+                <MDATTR name="first_near_lat" desc="" unit="deg" type="float64" mode="rw">34.88938514461913</MDATTR>
+                <MDATTR name="first_near_long" desc="" unit="deg" type="float64" mode="rw">50.991691028401284</MDATTR>
+                <MDATTR name="first_far_lat" desc="" unit="deg" type="float64" mode="rw">34.88938514461913</MDATTR>
+                <MDATTR name="first_far_long" desc="" unit="deg" type="float64" mode="rw">51.00484491357957</MDATTR>
+                <MDATTR name="last_near_lat" desc="" unit="deg" type="float64" mode="rw">34.879488411961184</MDATTR>
+                <MDATTR name="last_near_long" desc="" unit="deg" type="float64" mode="rw">50.991691028401284</MDATTR>
+                <MDATTR name="last_far_lat" desc="" unit="deg" type="float64" mode="rw">34.879488411961184</MDATTR>
+                <MDATTR name="last_far_long" desc="" unit="deg" type="float64" mode="rw">51.00484491357957</MDATTR>
                 <MDATTR name="PASS" desc="ASCENDING or DESCENDING" unit="" type="ascii" mode="rw">DESCENDING</MDATTR>
                 <MDATTR name="SAMPLE_TYPE" desc="DETECTED or COMPLEX" unit="" type="ascii" mode="rw">COMPLEX</MDATTR>
                 <MDATTR name="mds1_tx_rx_polar" desc="Polarization" unit="" type="ascii" mode="rw">VV</MDATTR>
@@ -298,27 +132,27 @@
                 <MDATTR name="algorithm" desc="Processing algorithm" unit="" type="ascii" mode="rw">-</MDATTR>
                 <MDATTR name="azimuth_looks" desc="" unit="" type="float64" mode="rw">1.0</MDATTR>
                 <MDATTR name="range_looks" desc="" unit="" type="float64" mode="rw">1.0</MDATTR>
-                <MDATTR name="range_spacing" desc="Range sample spacing" unit="m" type="float64" mode="rw">2.329562</MDATTR>
-                <MDATTR name="azimuth_spacing" desc="Azimuth sample spacing" unit="m" type="float64" mode="rw">13.94228</MDATTR>
+                <MDATTR name="range_spacing" desc="Range sample spacing" unit="m" type="float64" mode="rw">13.94556</MDATTR>
+                <MDATTR name="azimuth_spacing" desc="Azimuth sample spacing" unit="m" type="float64" mode="rw">13.94556</MDATTR>
                 <MDATTR name="range_window_type" desc="Range window type" unit="" type="ascii" mode="rw">Hamming</MDATTR>
                 <MDATTR name="range_window_coefficient" desc="Range window coefficient" unit="" type="float64" mode="rw">0.75</MDATTR>
                 <MDATTR name="pulse_repetition_frequency" desc="PRF" unit="Hz" type="float64" mode="rw">1717.128973878037</MDATTR>
                 <MDATTR name="radar_frequency" desc="Radar frequency" unit="MHz" type="float64" mode="rw">5405.000454334349</MDATTR>
                 <MDATTR name="line_time_interval" desc="" unit="s" type="float64" mode="rw">0.002055556299999998</MDATTR>
-                <MDATTR name="total_size" desc="Total product size" unit="MB" type="uint32" mode="rw">4064917</MDATTR>
-                <MDATTR name="num_output_lines" desc="Raster height" unit="lines" type="uint32" mode="rw">93</MDATTR>
-                <MDATTR name="num_samples_per_line" desc="Raster width" unit="samples" type="uint32" mode="rw">372</MDATTR>
-                <MDATTR name="subset_offset_x" desc="X coordinate of UL corner of subset in original image" unit="samples" type="uint32" mode="rw">3299</MDATTR>
-                <MDATTR name="subset_offset_y" desc="Y coordinate of UL corner of subset in original image" unit="samples" type="uint32" mode="rw">940</MDATTR>
-                <MDATTR name="srgr_flag" desc="SRGR applied" unit="flag" type="uint8" mode="rw">0</MDATTR>
+                <MDATTR name="total_size" desc="Total product size" unit="MB" type="uint32" mode="rw">3729937</MDATTR>
+                <MDATTR name="num_output_lines" desc="Raster height" unit="lines" type="uint32" mode="rw">80</MDATTR>
+                <MDATTR name="num_samples_per_line" desc="Raster width" unit="samples" type="uint32" mode="rw">106</MDATTR>
+                <MDATTR name="subset_offset_x" desc="X coordinate of UL corner of subset in original image" unit="samples" type="uint32" mode="rw">1187</MDATTR>
+                <MDATTR name="subset_offset_y" desc="Y coordinate of UL corner of subset in original image" unit="samples" type="uint32" mode="rw">1085</MDATTR>
+                <MDATTR name="srgr_flag" desc="SRGR applied" unit="flag" type="uint8" mode="rw">1</MDATTR>
                 <MDATTR name="avg_scene_height" desc="Average scene height ellipsoid" unit="m" type="float64" mode="rw">1712.5540853432788</MDATTR>
-                <MDATTR name="map_projection" desc="Map projection applied" unit="" type="ascii" mode="rw">-</MDATTR>
-                <MDATTR name="is_terrain_corrected" desc="orthorectification applied" unit="flag" type="uint8" mode="rw">0</MDATTR>
-                <MDATTR name="DEM" desc="Digital Elevation Model used" unit="" type="ascii" mode="rw">-</MDATTR>
-                <MDATTR name="geo_ref_system" desc="geographic reference system" unit="" type="ascii" mode="rw">-</MDATTR>
-                <MDATTR name="lat_pixel_res" desc="pixel resolution in geocoded image" unit="deg" type="float64" mode="rw">99999.0</MDATTR>
-                <MDATTR name="lon_pixel_res" desc="pixel resolution in geocoded image" unit="deg" type="float64" mode="rw">99999.0</MDATTR>
-                <MDATTR name="slant_range_to_first_pixel" desc="Slant range to 1st data sample" unit="m" type="float64" mode="rw">877713.6773385999</MDATTR>
+                <MDATTR name="map_projection" desc="Map projection applied" unit="" type="ascii" mode="rw">WGS84(DD)</MDATTR>
+                <MDATTR name="is_terrain_corrected" desc="orthorectification applied" unit="flag" type="uint8" mode="rw">1</MDATTR>
+                <MDATTR name="DEM" desc="Digital Elevation Model used" unit="" type="ascii" mode="rw">SRTM 3Sec</MDATTR>
+                <MDATTR name="geo_ref_system" desc="geographic reference system" unit="" type="ascii" mode="rw">WGS84</MDATTR>
+                <MDATTR name="lat_pixel_res" desc="pixel resolution in geocoded image" unit="deg" type="float64" mode="rw">1.2527509693605832E-4</MDATTR>
+                <MDATTR name="lon_pixel_res" desc="pixel resolution in geocoded image" unit="deg" type="float64" mode="rw">1.2527509693605832E-4</MDATTR>
+                <MDATTR name="slant_range_to_first_pixel" desc="Slant range to 1st data sample" unit="m" type="float64" mode="rw">870028.4523005999</MDATTR>
                 <MDATTR name="ant_elev_corr_flag" desc="Antenna elevation applied" unit="flag" type="uint8" mode="rw">0</MDATTR>
                 <MDATTR name="range_spread_comp_flag" desc="range spread compensation applied" unit="flag" type="uint8" mode="rw">0</MDATTR>
                 <MDATTR name="replica_power_corr_flag" desc="Replica pulse power correction applied" unit="flag" type="uint8" mode="rw">0</MDATTR>
@@ -2151,6 +1985,43 @@
                                 </MDElem>
                             </MDElem>
                         </MDElem>
+                    </MDElem>
+                </MDElem>
+                <MDElem name="Look_Direction_List">
+                    <MDElem name="look_direction1">
+                        <MDATTR name="time" type="utc" mode="rw">31-MAY-2025 02:37:52.166383</MDATTR>
+                        <MDATTR name="head_lat" type="float64" mode="rw">35.025367740403425</MDATTR>
+                        <MDATTR name="head_lon" type="float64" mode="rw">50.89345702514621</MDATTR>
+                        <MDATTR name="tail_lat" type="float64" mode="rw">34.98621975936514</MDATTR>
+                        <MDATTR name="tail_lon" type="float64" mode="rw">51.16326302133154</MDATTR>
+                    </MDElem>
+                    <MDElem name="look_direction2">
+                        <MDATTR name="time" type="utc" mode="rw">31-MAY-2025 02:37:53.175826</MDATTR>
+                        <MDATTR name="head_lat" type="float64" mode="rw">34.96453895588253</MDATTR>
+                        <MDATTR name="head_lon" type="float64" mode="rw">50.88112109376905</MDATTR>
+                        <MDATTR name="tail_lat" type="float64" mode="rw">34.92549951256005</MDATTR>
+                        <MDATTR name="tail_lon" type="float64" mode="rw">51.1499081081013</MDATTR>
+                    </MDElem>
+                    <MDElem name="look_direction3">
+                        <MDATTR name="time" type="utc" mode="rw">31-MAY-2025 02:37:54.185269</MDATTR>
+                        <MDATTR name="head_lat" type="float64" mode="rw">34.90371017136164</MDATTR>
+                        <MDATTR name="head_lon" type="float64" mode="rw">50.86878516239191</MDATTR>
+                        <MDATTR name="tail_lat" type="float64" mode="rw">34.86477926575497</MDATTR>
+                        <MDATTR name="tail_lon" type="float64" mode="rw">51.13655319487108</MDATTR>
+                    </MDElem>
+                    <MDElem name="look_direction4">
+                        <MDATTR name="time" type="utc" mode="rw">31-MAY-2025 02:37:55.194712</MDATTR>
+                        <MDATTR name="head_lat" type="float64" mode="rw">34.84288138684075</MDATTR>
+                        <MDATTR name="head_lon" type="float64" mode="rw">50.85644923101476</MDATTR>
+                        <MDATTR name="tail_lat" type="float64" mode="rw">34.80405901894987</MDATTR>
+                        <MDATTR name="tail_lon" type="float64" mode="rw">51.12319828164084</MDATTR>
+                    </MDElem>
+                    <MDElem name="look_direction5">
+                        <MDATTR name="time" type="utc" mode="rw">31-MAY-2025 02:37:56.204155</MDATTR>
+                        <MDATTR name="head_lat" type="float64" mode="rw">34.78221205715951</MDATTR>
+                        <MDATTR name="head_lon" type="float64" mode="rw">50.84299508962844</MDATTR>
+                        <MDATTR name="tail_lat" type="float64" mode="rw">34.74338539785426</MDATTR>
+                        <MDATTR name="tail_lon" type="float64" mode="rw">51.10952752368461</MDATTR>
                     </MDElem>
                 </MDElem>
             </MDElem>
@@ -10417,23 +10288,15 @@
             </MDElem>
             <MDElem name="history">
                 <MDElem name="SubsetInfo">
-                    <MDATTR name="SourceProduct.name" type="ascii">S1A_back_VV_1_deb</MDATTR>
+                    <MDATTR name="SourceProduct.name" type="ascii">S1A_back_VV_1_deb_TC</MDATTR>
                     <MDATTR name="SubSampling.x" type="int32" mode="rw">1</MDATTR>
                     <MDATTR name="SubSampling.y" type="int32" mode="rw">1</MDATTR>
-                    <MDATTR name="SubRegion.x" type="int32" mode="rw">3299</MDATTR>
-                    <MDATTR name="SubRegion.y" type="int32" mode="rw">940</MDATTR>
-                    <MDATTR name="SubRegion.width" type="int32" mode="rw">372</MDATTR>
-                    <MDATTR name="SubRegion.height" type="int32" mode="rw">93</MDATTR>
-                    <MDATTR name="ProductNodeName.1" type="ascii">latitude</MDATTR>
-                    <MDATTR name="ProductNodeName.2" type="ascii">longitude</MDATTR>
-                    <MDATTR name="ProductNodeName.3" type="ascii">slant_range_time</MDATTR>
-                    <MDATTR name="ProductNodeName.4" type="ascii">incident_angle</MDATTR>
-                    <MDATTR name="ProductNodeName.5" type="ascii">i_IW2_VV_mst_31May2025</MDATTR>
-                    <MDATTR name="ProductNodeName.6" type="ascii">q_IW2_VV_mst_31May2025</MDATTR>
-                    <MDATTR name="ProductNodeName.7" type="ascii">Intensity_IW2_VV_mst_31May2025</MDATTR>
-                    <MDATTR name="ProductNodeName.8" type="ascii">i_IW2_VV_slv1_12Jun2025</MDATTR>
-                    <MDATTR name="ProductNodeName.9" type="ascii">q_IW2_VV_slv1_12Jun2025</MDATTR>
-                    <MDATTR name="ProductNodeName.10" type="ascii">Intensity_IW2_VV_slv1_12Jun2025</MDATTR>
+                    <MDATTR name="SubRegion.x" type="int32" mode="rw">1187</MDATTR>
+                    <MDATTR name="SubRegion.y" type="int32" mode="rw">1085</MDATTR>
+                    <MDATTR name="SubRegion.width" type="int32" mode="rw">106</MDATTR>
+                    <MDATTR name="SubRegion.height" type="int32" mode="rw">80</MDATTR>
+                    <MDATTR name="ProductNodeName.1" type="ascii">Intensity_IW2_VV_mst_31May2025</MDATTR>
+                    <MDATTR name="ProductNodeName.2" type="ascii">Intensity_IW2_VV_slv1_12Jun2025</MDATTR>
                     <MDElem name="SubsetInfo">
                         <MDATTR name="SourceProduct.name" type="ascii">S1A_back_VV_1_Deb</MDATTR>
                         <MDATTR name="SubSampling.x" type="int32" mode="rw">1</MDATTR>
@@ -10633,7 +10496,50 @@ Copyright (C) 2016 by Array Systems Computing Inc.</MDATTR>
                     </MDElem>
                 </MDElem>
                 <MDElem name="node.7">
-                    <MDATTR name="id" type="ascii" mode="rw">Subset$197EE1F0278</MDATTR>
+                    <MDATTR name="id" type="ascii" mode="rw">Terrain-Correction$197EE2DBAA7</MDATTR>
+                    <MDATTR name="operator" type="ascii" mode="rw">Terrain-Correction</MDATTR>
+                    <MDATTR name="moduleName" type="ascii" mode="rw">SAR Processing</MDATTR>
+                    <MDATTR name="moduleVersion" type="ascii" mode="rw">12.0.0</MDATTR>
+                    <MDATTR name="purpose" type="ascii" mode="rw">RD method for orthorectification</MDATTR>
+                    <MDATTR name="authors" type="ascii" mode="rw">Jun Lu, Luis Veci</MDATTR>
+                    <MDATTR name="version" type="ascii" mode="rw">1.0</MDATTR>
+                    <MDATTR name="copyright" type="ascii" mode="rw">Copyright (C) 2014 by Array Systems Computing Inc.</MDATTR>
+                    <MDATTR name="processingTime" type="ascii" mode="rw">2025-07-09T07:54:23.785Z</MDATTR>
+                    <MDElem name="sources">
+                        <MDATTR name="sourceProduct" type="ascii" mode="rw">file:/home/p910/jupyterlab/projects/s1-pipeline/working_directory/Untitled%20Folder/tttt/deb_vv_1/S1A_back_VV_1_deb.dim</MDATTR>
+                    </MDElem>
+                    <MDElem name="parameters">
+                        <MDATTR name="saveLatLon" type="ascii">false</MDATTR>
+                        <MDATTR name="saveIncidenceAngleFromEllipsoid" type="ascii">false</MDATTR>
+                        <MDATTR name="nodataValueAtSea" type="ascii">true</MDATTR>
+                        <MDATTR name="alignToStandardGrid" type="ascii">false</MDATTR>
+                        <MDATTR name="pixelSpacingInMeter" type="ascii">13.94556</MDATTR>
+                        <MDATTR name="mapProjection" type="ascii">WGS84(DD)</MDATTR>
+                        <MDATTR name="saveBetaNought" type="ascii">false</MDATTR>
+                        <MDATTR name="demResamplingMethod" type="ascii">BILINEAR_INTERPOLATION</MDATTR>
+                        <MDATTR name="imgResamplingMethod" type="ascii">BILINEAR_INTERPOLATION</MDATTR>
+                        <MDATTR name="saveSigmaNought" type="ascii">false</MDATTR>
+                        <MDATTR name="incidenceAngleForSigma0" type="ascii">Use projected local incidence angle from DEM</MDATTR>
+                        <MDATTR name="applyRadiometricNormalization" type="ascii">false</MDATTR>
+                        <MDATTR name="externalDEMApplyEGM" type="ascii">true</MDATTR>
+                        <MDATTR name="saveSelectedSourceBand" type="ascii">true</MDATTR>
+                        <MDATTR name="demName" type="ascii">SRTM 3Sec</MDATTR>
+                        <MDATTR name="externalDEMNoDataValue" type="ascii">0.0</MDATTR>
+                        <MDATTR name="outputComplex" type="ascii">false</MDATTR>
+                        <MDATTR name="saveProjectedLocalIncidenceAngle" type="ascii">false</MDATTR>
+                        <MDATTR name="incidenceAngleForGamma0" type="ascii">Use projected local incidence angle from DEM</MDATTR>
+                        <MDATTR name="saveGammaNought" type="ascii">false</MDATTR>
+                        <MDATTR name="saveLocalIncidenceAngle" type="ascii">false</MDATTR>
+                        <MDATTR name="standardGridOriginX" type="ascii">0.0</MDATTR>
+                        <MDATTR name="saveDEM" type="ascii">false</MDATTR>
+                        <MDATTR name="standardGridOriginY" type="ascii">0.0</MDATTR>
+                        <MDATTR name="saveLayoverShadowMask" type="ascii">false</MDATTR>
+                        <MDATTR name="pixelSpacingInDegree" type="ascii">1.2527509693605832E-4</MDATTR>
+                        <MDATTR name="auxFile" type="ascii">Latest Auxiliary File</MDATTR>
+                    </MDElem>
+                </MDElem>
+                <MDElem name="node.8">
+                    <MDATTR name="id" type="ascii" mode="rw">Subset$197EE2DC0BF</MDATTR>
                     <MDATTR name="operator" type="ascii" mode="rw">Subset</MDATTR>
                     <MDATTR name="moduleName" type="ascii" mode="rw">SNAP Graph Processing Framework (GPF)</MDATTR>
                     <MDATTR name="moduleVersion" type="ascii" mode="rw">12.0.0</MDATTR>
@@ -10641,16 +10547,16 @@ Copyright (C) 2016 by Array Systems Computing Inc.</MDATTR>
                     <MDATTR name="authors" type="ascii" mode="rw">SNAP Developers</MDATTR>
                     <MDATTR name="version" type="ascii" mode="rw">1.3</MDATTR>
                     <MDATTR name="copyright" type="ascii" mode="rw">(c) 2011 by Brockmann Consult</MDATTR>
-                    <MDATTR name="processingTime" type="ascii" mode="rw">2025-07-09T07:38:19.129Z</MDATTR>
+                    <MDATTR name="processingTime" type="ascii" mode="rw">2025-07-09T07:54:25.344Z</MDATTR>
                     <MDElem name="sources">
-                        <MDATTR name="sourceProduct" type="ascii" mode="rw">file:/home/p910/jupyterlab/projects/s1-pipeline/working_directory/Untitled%20Folder/tttt/deb_vv_1/S1A_back_VV_1_deb.dim</MDATTR>
+                        <MDATTR name="sourceProduct" type="ascii" mode="rw">Terrain-Correction$197EE2DBAA7</MDATTR>
                     </MDElem>
                     <MDElem name="parameters">
                         <MDATTR name="fullSwath" type="ascii">false</MDATTR>
                         <MDATTR name="subSamplingY" type="ascii">1</MDATTR>
                         <MDATTR name="subSamplingX" type="ascii">1</MDATTR>
                         <MDATTR name="copyMetadata" type="ascii">true</MDATTR>
-                        <MDATTR name="region" type="ascii">3299,940,372,93</MDATTR>
+                        <MDATTR name="region" type="ascii">1187,1085,106,80</MDATTR>
                         <MDElem name="geoRegion">
                             <MDATTR name="class" type="ascii">org.locationtech.jts.geom.Polygon</MDATTR>
                         </MDElem>
